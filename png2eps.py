@@ -1,5 +1,6 @@
 
 
+
 from PIL import Image
 
 image_png = 'pic.png'
@@ -10,3 +11,4 @@ im = Image.open(image_png)
 fig = im.convert(im.mode) 
 
 fig.save('pic.eps', lossless = True)
+fig.save('pic.pdf', lossless = True)
